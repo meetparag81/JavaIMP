@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="55" started-at="2018-10-03T16:41:04Z" finished-at="2018-10-03T16:41:04Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="55" started-at="2018-10-03T16:41:04Z" finished-at="2018-10-03T16:41:04Z">
+      <class name="SeleniumImportant.DiffbetBeforeTestBeforeMethod">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:SeleniumImportant.DiffbetBeforeTestBeforeMethod@27efef64]" name="beforeTest" is-config="true" duration-ms="13" started-at="2018-10-03T22:11:04Z" finished-at="2018-10-03T22:11:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="TestExample()[pri:1, instance:SeleniumImportant.DiffbetBeforeTestBeforeMethod@27efef64]" name="TestExample" duration-ms="8" started-at="2018-10-03T22:11:04Z" finished-at="2018-10-03T22:11:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestExample -->
+        <test-method status="PASS" signature="beforemethod()[pri:0, instance:SeleniumImportant.DiffbetBeforeTestBeforeMethod@27efef64]" name="beforemethod" is-config="true" duration-ms="0" started-at="2018-10-03T22:11:04Z" finished-at="2018-10-03T22:11:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="PASS" signature="beforemethod()[pri:0, instance:SeleniumImportant.DiffbetBeforeTestBeforeMethod@27efef64]" name="beforemethod" is-config="true" duration-ms="0" started-at="2018-10-03T22:11:04Z" finished-at="2018-10-03T22:11:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="PASS" signature="TestExample1()[pri:2, instance:SeleniumImportant.DiffbetBeforeTestBeforeMethod@27efef64]" name="TestExample1" duration-ms="2" started-at="2018-10-03T22:11:04Z" finished-at="2018-10-03T22:11:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestExample1 -->
+      </class> <!-- SeleniumImportant.DiffbetBeforeTestBeforeMethod -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
