@@ -16,5 +16,5 @@ public class MethodsWebDriver
 		driver.manage().window().maximize();
 		driver1.wait();
 	
-}
+	}
 }
