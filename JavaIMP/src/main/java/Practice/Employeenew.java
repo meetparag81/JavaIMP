@@ -1,6 +1,6 @@
 package Practice;
 
-import com.oops.Employee;
+import Excercise1.Employee;
 
 public class Employeenew 
 {

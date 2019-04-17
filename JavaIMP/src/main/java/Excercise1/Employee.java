@@ -26,5 +26,9 @@ public double calculatesalary()
 	{
 		return basic+ hra+da;
 	}
+public static void setCount(int count) {
+	// TODO Auto-generated method stub
+	
+}
 
 }

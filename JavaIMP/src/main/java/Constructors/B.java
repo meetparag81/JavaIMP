@@ -10,17 +10,19 @@ public class B extends A
 
 	public B() 
 	{
-		// TODO Auto-generated constructor stub
+		
+		System.out.println("B class zero argument constructor");
+		
 	}
 
-	public static void main(String[] args) 
+	/*public static void main(String[] args) 
 	{
-		B obj = new B();
-		A obj1 = new A( "JIP");
-		B obj2 = new B("jip");
+		//B obj = new B();
+		//A obj1 = new A( "JIP");
+		B obj2 = new B("jip");*/
 		
 		
 
 	}
 
-}
+

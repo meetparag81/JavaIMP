@@ -14,11 +14,7 @@ public class Test1 {
 		int j=2/0;	
 		
 		}
-		catch(IOException e)
-		{
-			
-		}
-		catch(ArithmeticException e)
+		catch(Exception e)
 		{
 			
 		}

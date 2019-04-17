@@ -2,7 +2,7 @@ package Overriding;
 
 public class Q extends P
 {
-	public Q()
+	private void P()
 	{
 		System.out.println("child Q");
 	}

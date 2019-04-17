@@ -18,10 +18,6 @@ public class Test2 {
 		{
 			
 		}
-		catch(ArithmeticException e)
-		{
-			
-		}
 		finally
 		{
 			

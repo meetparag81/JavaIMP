@@ -4,7 +4,7 @@ public class A
 {
 	public A()
 	{
-		System.out.println("Parent class no argument constructor");
+		System.out.println("A class zero argument constructor");
 	}
 	
 	public A( String JIP)
