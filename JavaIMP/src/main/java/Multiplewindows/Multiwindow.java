@@ -4,11 +4,14 @@ import java.util.Iterator;
 import java.util.Set;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
+
+
+
 
 public class Multiwindow 
 {
@@ -20,7 +23,6 @@ public class Multiwindow
 		String firstwindow = driver.getWindowHandle(); 
 		Actions act = new Actions(driver);
 		WebElement ele = driver.findElement(By.xpath("//h2[text()='Guru99 Bank']//following::a[1]"));
-		Thread.sleep(3000);
 		act.moveToElement(ele).click().build().perform();
 		Set<String> windows = driver.getWindowHandles();
 		Iterator<String> Itr = windows.iterator();
@@ -29,13 +31,24 @@ public class Multiwindow
 		String childwindow=Itr.next();
 		if(!firstwindow.equalsIgnoreCase(childwindow))
 		{
-			driver.findElement(By.name("emailid")).sendKeys("borawakepp4@gmail.com");
-			driver.findElement(By.name("btnLogin")).click();
-			driver.close();
 			
+		driver.switchTo().window(childwindow);
+		try
+		{
+			
+		TestUtils.VisibleOn(driver,driver.findElement(By.name("emailid")) , 30);
+		}
+		catch(TimeoutException e)
+		{
+			e.getStackTrace();
+		}
+		driver.findElement(By.name("emailid")).sendKeys("borawakepp4@gmail.com");
+		driver.findElement(By.name("btnLogin")).click();
+		driver.close();
+		Thread.sleep(3000);
 		String Act=	driver.switchTo().window(firstwindow).getTitle();
 		String exp = "Guru99 Bank Home Page ";
-		Assert.assertEquals(Act, exp);
+		
 			
 		}
 		
