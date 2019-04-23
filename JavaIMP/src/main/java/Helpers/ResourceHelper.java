@@ -1,4 +1,4 @@
-package Multiplewindows;
+package Helpers;
 
 public class ResourceHelper 
 {

@@ -1,4 +1,4 @@
-package Multiplewindows;
+package Helpers;
 
 import java.io.File;
 import java.io.IOException;
