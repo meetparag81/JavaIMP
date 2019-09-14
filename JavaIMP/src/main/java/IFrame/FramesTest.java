@@ -19,13 +19,16 @@ public class FramesTest
 		System.setProperty("webdriver.chrome.driver" ,ResourceHelper.getResourcePath("\\src\\main\\resources\\chromedriver.exe"));
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://demo.guru99.com/test/guru99home");
-		List<WebElement>frames= driver.findElements(By.tagName("//iframe"));
+		/*List<WebElement>frames= driver.findElements(By.tagName("//iframe"));
 		
 		for(int i=0;i<frames.size();i++)
 		{
+			String frameid= frames.get(i).getAttribute("id");*/
+			driver.switchTo().frame("a077aa5e");
+			driver.findElement(By.xpath("/html/body/a/img")).click();
 			
 		}
 		
 	}
 
-}
+
