@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import Multiplewindows.ResourceHelper;
+import Helpers.ResourceHelper;
 
 public class FramesTest 
 {
