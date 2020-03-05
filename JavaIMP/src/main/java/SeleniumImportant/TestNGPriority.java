@@ -6,16 +6,17 @@ public class TestNGPriority
 {
 	@Test(priority = -1)
 	 
-	  public void One() 
+	  public void MinusOne() 
 	{
 	 
-	      System.out.println("This is the Test Case number minus one");
+	      
+	      
 	 
 	  }
 	 
 	  @Test(priority = 0)
 	 
-	  public void Two() {
+	  public void Zero() {
 	 
 		  System.out.println("This is the Test Case number zero");
 	 
@@ -23,7 +24,7 @@ public class TestNGPriority
 	 
 	  @Test(priority = 1)
 	 
-	  public void Three() {
+	  public void One() {
 	 
 		  System.out.println("This is the Test Case number one");
 	 
@@ -31,7 +32,7 @@ public class TestNGPriority
 	 
 	  @Test(priority = 2)
 	 
-	  public void Four() 
+	  public void Two() 
 	  {
 	 
 		  System.out.println("This is the Test Case number two");
