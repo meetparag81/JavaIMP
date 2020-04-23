@@ -1,4 +1,4 @@
-package BufferExamples;
+package StringBuffer;
 
 
 
@@ -82,7 +82,7 @@ public class Nationalid {
 		MaxicoNationalid();
 	}
 
-	public static StringBuilder MaxicoNationalid() { 
+	public static String MaxicoNationalid() { 
 
 		StringBuilder sb = new StringBuilder(); 
 
@@ -188,7 +188,7 @@ public class Nationalid {
 		} 
 
 		System.out.println("characters are" + sb + " and no of characters" + sb.length());
-		return sb;
+		return sb.toString();
 
 		} 
 
