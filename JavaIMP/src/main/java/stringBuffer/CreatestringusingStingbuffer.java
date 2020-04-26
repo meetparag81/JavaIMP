@@ -1,4 +1,4 @@
-package StringBuffer;
+package stringBuffer;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

@@ -1,4 +1,4 @@
-package StringBuffer;
+package stringBuffer;
 
 public class ChecksumNo {
 	
