@@ -1,7 +1,7 @@
 package stringBuffer;
 
 public class IrlandLogicForNID {
-	
+	//
 	public static void main(String[] args) {
 		
 		String NumericString = "1234567";
