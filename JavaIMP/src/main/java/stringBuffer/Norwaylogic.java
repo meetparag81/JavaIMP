@@ -1,7 +1,7 @@
 package stringBuffer;
 
 public class Norwaylogic {
-	//
+	
 	public static void main(String[] args) {
 		String NumericString = "211245008";
 		
