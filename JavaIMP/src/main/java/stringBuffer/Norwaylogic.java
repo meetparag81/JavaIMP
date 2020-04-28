@@ -4,7 +4,7 @@ public class Norwaylogic {
 	
 	public static void main(String[] args) {
 		String NumericString = "211245008";
-		//String AlphabetString= "AWXTZ";
+		
 		//String Numberforfiestdigit="123";
 		 StringBuilder sb = new StringBuilder(11);
 		 sb.append(NumericString);
