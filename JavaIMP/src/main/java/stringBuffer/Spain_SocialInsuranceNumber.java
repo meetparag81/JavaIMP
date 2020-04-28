@@ -17,11 +17,6 @@ public class Spain_SocialInsuranceNumber {
 		
 		StringBuilder sb = new StringBuilder(14);
 		
-				
-				
-
-				
-		
 		sb.append(0);
 		  for(int i=0;i<1;i++) { 
 			  
