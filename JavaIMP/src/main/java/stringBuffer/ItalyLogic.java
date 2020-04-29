@@ -15,6 +15,7 @@ public class ItalyLogic {
 	private static String firstName="Peter";
 	private static String DOB1="04-Dec-1989";
 	private static String DOB;
+	private static Map oddNumbervalue;
 
 	public static void main(String[] args) {
 		 StringBuilder sb = new StringBuilder();
@@ -120,9 +121,10 @@ public class ItalyLogic {
 		       for(int i = 0; i<words.length(); i++){
 		    	   CharList.add(words.charAt(i));
 		         }
-		       int[] arr = new int[] {1,0,2,5,4,5,7,9,8,13,15,17,19,21,2,4,18,20,11,3,6,8,12,14,18,25,26};
+		       
+		       int[] arr = new int[] {0,1,5,7,9,13,15,17,19,21,2,4,18,20,11,3,6,8,12,14,16,10,22,25,24,23};
 
-		       ArrayList<Character> Nuberlist = new ArrayList<Character>();
+		       ArrayList<Character> Numberlist = new ArrayList<Character>();
 
 		       for(int i = 0; i<arr.length; i++){
 		    	   
@@ -133,19 +135,30 @@ public class ItalyLogic {
 		       for(int j=0;j<26;j++)
 		       {
 		        alphabets = new HashMap<String, Integer>();
-				alphabets.put(CharList.get(j), j);
+				alphabets.put(CharList.get(j), arr[j]);
 				
-				System.out.println("The  character and numbers are"+ CharList.get(j)+","+ j );
+				int s = arr[j];
+				System.out.println("The  character and numbers are"+ CharList.get(j)+","+ s );
 		       }
-		       
-		       int sum = 0;
-		       
+		       String numbers = new String("0123456789");
+		       for(int i = 0; i<numbers.length(); i++){
+		    	   Numberlist.add(numbers.charAt(i));
+		         }
+		       ArrayList<Character> numberlist = new ArrayList<Character>();
+		       int[] arr1 = new int[] {1,0,5,7,9,13,15,17,19,21};
+		       oddNumbervalue = new HashMap<String, Integer>();
+		       for(int i=0;i<10;i++)
+		       {
+		    	   oddNumbervalue.put(numbers.charAt(i), arr1[i]);
+		       }
+		       String s;
+			System.out.println("The  character and numbers are"); 
 		       
 		       ArrayList<Character> CharList1 = new ArrayList<Character>();
 		       System.out.println();
 		 for(int k=0;k<15;k++) { 
 			 String NID= sb.toString(); 
-			 char s = NID.charAt(k);
+			 char s1 = NID.charAt(k);
 		  alphabets.get(k);
 		 }
 		 
