@@ -7,8 +7,8 @@ import java.util.Date;
 public class FranceLogic {
 	
 	private static String DOB;
-	private static int num1;
-	private static int num;
+	
+	
 	
 	
 
@@ -32,40 +32,22 @@ public class FranceLogic {
 			{
 				sb.append(20);
 			}*/
-			int arr[] =  {975, 977, 978, 979, 984, 986, 987 , 988};
-			int count=0;
-			for(int i=0;i<8;i++)
-			{
-				
-				
-				if(count==1)
-				{
-					break;
-				}
-				sb.append(arr[i]);
-				count++;
-				
-			}
-			for(int i=0;i<5;i++)
+			sb.append(97);
+			for(int i=0;i<6;i++)
 			{
 				int index = (int) (number.length() * Math.random());
 				sb.append(number.charAt(index));
 			}
 			System.out.println("The first 13 characters are" +sb+ "and the length is " + sb.length());
 			String s= sb.toString();
-			 
-			try
-			{
-				 num= Integer.parseInt(s);	
-				  
-			}
-			catch(Exception e)
-			{
-				num1=num;
-				System.out.println("Numberformatexception seen");
-			}
-			
-			int reminder = num1%97;
+			long num = Long.parseLong(s);
+		/*
+		 * try { int num = Integer.parseInt(s); num1=num; } catch(Exception e) {
+		 * 
+		 * System.out.println("Numberformatexception seen"); }
+		 */
+			 long num1 = num;
+			int reminder = (int) (num1%97);
 			
 			int lasttwoNos= 97-reminder;
 			if(lasttwoNos==0)
