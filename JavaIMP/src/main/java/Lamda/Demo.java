@@ -1,12 +1,12 @@
 package Lamda;
 
-public interface Inter 
+public interface Demo 
 {
 	public void m1();
 	
 
 }
-class Demo implements Inter
+class Democlass implements Demo
 {
 
 	@Override
