@@ -23,26 +23,34 @@ public class TestNGPriority
 	 
 	  @Test(priority = 1)
 	 
-	  public void Three() {
+	  public void Threeone() {
 	 
-		  System.out.println("This is the Test Case number one");
+		  System.out.println("This is the Test Case threeone");
 	 
 	  }
 	 
-	  @Test(priority = 2)
+	  @Test(priority = 1)
 	 
-	  public void Four() 
+	  public void Threetwo() 
 	  {
 	 
-		  System.out.println("This is the Test Case number two");
+		  System.out.println("This is the Test Case number threetwo");
 	 
 	  }
 	  
-	  @Test(priority = 3)
-	  public void Five() 
+	  @Test(priority = 1)
+	  public void Three() 
 	  {
 	 
 		  System.out.println("This is the Test Case number three");
+	 
+	  }
+	  
+	  @Test(priority = 2)
+	  public void Four() 
+	  {
+	 
+		  System.out.println("This is the Test Case number four");
 	 
 	  }
 

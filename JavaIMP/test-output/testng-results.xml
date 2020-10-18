@@ -1,33 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="55" started-at="2018-10-03T16:41:04Z" finished-at="2018-10-03T16:41:04Z">
+  <suite name="Default suite" duration-ms="56" started-at="2020-10-18T09:29:39Z" finished-at="2020-10-18T09:29:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="55" started-at="2018-10-03T16:41:04Z" finished-at="2018-10-03T16:41:04Z">
-      <class name="SeleniumImportant.DiffbetBeforeTestBeforeMethod">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:SeleniumImportant.DiffbetBeforeTestBeforeMethod@27efef64]" name="beforeTest" is-config="true" duration-ms="13" started-at="2018-10-03T22:11:04Z" finished-at="2018-10-03T22:11:04Z">
+    <test name="Default test" duration-ms="56" started-at="2020-10-18T09:29:39Z" finished-at="2020-10-18T09:29:39Z">
+      <class name="SeleniumImportant.TestNGPriority">
+        <test-method status="PASS" signature="One()[pri:-1, instance:SeleniumImportant.TestNGPriority@5649fd9b]" name="One" duration-ms="12" started-at="2020-10-18T14:59:39Z" finished-at="2020-10-18T14:59:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="TestExample()[pri:1, instance:SeleniumImportant.DiffbetBeforeTestBeforeMethod@27efef64]" name="TestExample" duration-ms="8" started-at="2018-10-03T22:11:04Z" finished-at="2018-10-03T22:11:04Z">
+        </test-method> <!-- One -->
+        <test-method status="PASS" signature="Two()[pri:0, instance:SeleniumImportant.TestNGPriority@5649fd9b]" name="Two" duration-ms="2" started-at="2020-10-18T14:59:39Z" finished-at="2020-10-18T14:59:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestExample -->
-        <test-method status="PASS" signature="beforemethod()[pri:0, instance:SeleniumImportant.DiffbetBeforeTestBeforeMethod@27efef64]" name="beforemethod" is-config="true" duration-ms="0" started-at="2018-10-03T22:11:04Z" finished-at="2018-10-03T22:11:04Z">
+        </test-method> <!-- Two -->
+        <test-method status="PASS" signature="Three()[pri:1, instance:SeleniumImportant.TestNGPriority@5649fd9b]" name="Three" duration-ms="2" started-at="2020-10-18T14:59:39Z" finished-at="2020-10-18T14:59:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforemethod -->
-        <test-method status="PASS" signature="beforemethod()[pri:0, instance:SeleniumImportant.DiffbetBeforeTestBeforeMethod@27efef64]" name="beforemethod" is-config="true" duration-ms="0" started-at="2018-10-03T22:11:04Z" finished-at="2018-10-03T22:11:04Z">
+        </test-method> <!-- Three -->
+        <test-method status="PASS" signature="Threeone()[pri:1, instance:SeleniumImportant.TestNGPriority@5649fd9b]" name="Threeone" duration-ms="1" started-at="2020-10-18T14:59:39Z" finished-at="2020-10-18T14:59:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforemethod -->
-        <test-method status="PASS" signature="TestExample1()[pri:2, instance:SeleniumImportant.DiffbetBeforeTestBeforeMethod@27efef64]" name="TestExample1" duration-ms="2" started-at="2018-10-03T22:11:04Z" finished-at="2018-10-03T22:11:04Z">
+        </test-method> <!-- Threeone -->
+        <test-method status="PASS" signature="Threetwo()[pri:1, instance:SeleniumImportant.TestNGPriority@5649fd9b]" name="Threetwo" duration-ms="1" started-at="2020-10-18T14:59:39Z" finished-at="2020-10-18T14:59:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestExample1 -->
-      </class> <!-- SeleniumImportant.DiffbetBeforeTestBeforeMethod -->
+        </test-method> <!-- Threetwo -->
+        <test-method status="PASS" signature="Four()[pri:2, instance:SeleniumImportant.TestNGPriority@5649fd9b]" name="Four" duration-ms="1" started-at="2020-10-18T14:59:39Z" finished-at="2020-10-18T14:59:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Four -->
+      </class> <!-- SeleniumImportant.TestNGPriority -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
