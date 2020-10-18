@@ -6,16 +6,17 @@ public class TestNGPriority
 {
 	@Test(priority = -1)
 	 
-	  public void One() 
+	  public void MinusOne() 
 	{
 	 
-	      System.out.println("This is the Test Case number minus one");
+	      
+	      
 	 
 	  }
 	 
 	  @Test(priority = 0)
 	 
-	  public void Two() {
+	  public void Zero() {
 	 
 		  System.out.println("This is the Test Case number zero");
 	 
@@ -23,7 +24,11 @@ public class TestNGPriority
 	 
 	  @Test(priority = 1)
 	 
+<<<<<<< HEAD
 	  public void Threeone() {
+=======
+	  public void One() {
+>>>>>>> branch 'master' of https://github.com/meetparag81/JavaIMP.git
 	 
 		  System.out.println("This is the Test Case threeone");
 	 
@@ -31,7 +36,11 @@ public class TestNGPriority
 	 
 	  @Test(priority = 1)
 	 
+<<<<<<< HEAD
 	  public void Threetwo() 
+=======
+	  public void Two() 
+>>>>>>> branch 'master' of https://github.com/meetparag81/JavaIMP.git
 	  {
 	 
 		  System.out.println("This is the Test Case number threetwo");

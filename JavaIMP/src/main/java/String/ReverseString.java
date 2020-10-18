@@ -6,10 +6,10 @@ public class ReverseString
 	public static void main(String[] args)
 	{
 		StringBuffer sb = new StringBuffer("Reverse Example");
-		System.out.println("Orignal StringBuffer Content :"+ sb);
+		System.out.println("Orignal stringBuffer Content :"+ sb);
 		
 		sb.reverse();
-		System.out.println("Reverse StringBuffer Content :"+ sb);
+		System.out.println("Reverse stringBuffer Content :"+ sb);
 		
 		String str1 = "Strings are imutable";
 		String str2 = "Strings are imutable";

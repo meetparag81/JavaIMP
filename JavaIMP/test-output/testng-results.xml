@@ -1,36 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+=======
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+>>>>>>> branch 'master' of https://github.com/meetparag81/JavaIMP.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="56" started-at="2020-10-18T09:29:39Z" finished-at="2020-10-18T09:29:39Z">
+=======
+  <suite name="Default suite" duration-ms="51" started-at="2020-03-05T09:21:21Z" finished-at="2020-03-05T09:21:21Z">
+>>>>>>> branch 'master' of https://github.com/meetparag81/JavaIMP.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="56" started-at="2020-10-18T09:29:39Z" finished-at="2020-10-18T09:29:39Z">
       <class name="SeleniumImportant.TestNGPriority">
         <test-method status="PASS" signature="One()[pri:-1, instance:SeleniumImportant.TestNGPriority@5649fd9b]" name="One" duration-ms="12" started-at="2020-10-18T14:59:39Z" finished-at="2020-10-18T14:59:39Z">
+=======
+    <test name="Default test" duration-ms="51" started-at="2020-03-05T09:21:21Z" finished-at="2020-03-05T09:21:21Z">
+      <class name="SeleniumImportant.TestNGPriority">
+        <test-method status="PASS" signature="One()[pri:-1, instance:SeleniumImportant.TestNGPriority@73ad2d6]" name="One" duration-ms="13" started-at="2020-03-05T14:51:21Z" finished-at="2020-03-05T14:51:21Z">
+>>>>>>> branch 'master' of https://github.com/meetparag81/JavaIMP.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- One -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="Two()[pri:0, instance:SeleniumImportant.TestNGPriority@5649fd9b]" name="Two" duration-ms="2" started-at="2020-10-18T14:59:39Z" finished-at="2020-10-18T14:59:39Z">
+=======
+        <test-method status="PASS" signature="Two()[pri:0, instance:SeleniumImportant.TestNGPriority@73ad2d6]" name="Two" duration-ms="1" started-at="2020-03-05T14:51:21Z" finished-at="2020-03-05T14:51:21Z">
+>>>>>>> branch 'master' of https://github.com/meetparag81/JavaIMP.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Two -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="Three()[pri:1, instance:SeleniumImportant.TestNGPriority@5649fd9b]" name="Three" duration-ms="2" started-at="2020-10-18T14:59:39Z" finished-at="2020-10-18T14:59:39Z">
+=======
+        <test-method status="PASS" signature="Three()[pri:1, instance:SeleniumImportant.TestNGPriority@73ad2d6]" name="Three" duration-ms="1" started-at="2020-03-05T14:51:21Z" finished-at="2020-03-05T14:51:21Z">
+>>>>>>> branch 'master' of https://github.com/meetparag81/JavaIMP.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Three -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="Threeone()[pri:1, instance:SeleniumImportant.TestNGPriority@5649fd9b]" name="Threeone" duration-ms="1" started-at="2020-10-18T14:59:39Z" finished-at="2020-10-18T14:59:39Z">
+=======
+        <test-method status="PASS" signature="Four()[pri:2, instance:SeleniumImportant.TestNGPriority@73ad2d6]" name="Four" duration-ms="1" started-at="2020-03-05T14:51:21Z" finished-at="2020-03-05T14:51:21Z">
+>>>>>>> branch 'master' of https://github.com/meetparag81/JavaIMP.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- Threeone -->
         <test-method status="PASS" signature="Threetwo()[pri:1, instance:SeleniumImportant.TestNGPriority@5649fd9b]" name="Threetwo" duration-ms="1" started-at="2020-10-18T14:59:39Z" finished-at="2020-10-18T14:59:39Z">
+=======
+        </test-method> <!-- Four -->
+        <test-method status="PASS" signature="Five()[pri:3, instance:SeleniumImportant.TestNGPriority@73ad2d6]" name="Five" duration-ms="1" started-at="2020-03-05T14:51:21Z" finished-at="2020-03-05T14:51:21Z">
+>>>>>>> branch 'master' of https://github.com/meetparag81/JavaIMP.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- Threetwo -->
         <test-method status="PASS" signature="Four()[pri:2, instance:SeleniumImportant.TestNGPriority@5649fd9b]" name="Four" duration-ms="1" started-at="2020-10-18T14:59:39Z" finished-at="2020-10-18T14:59:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Four -->
+=======
+        </test-method> <!-- Five -->
+>>>>>>> branch 'master' of https://github.com/meetparag81/JavaIMP.git
       </class> <!-- SeleniumImportant.TestNGPriority -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
