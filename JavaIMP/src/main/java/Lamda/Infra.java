@@ -6,7 +6,7 @@ public interface Infra
 	
 
 }
-class Demo implements  Infra
+/*class Demo implements  Infra
 {
 
 	@Override
@@ -16,7 +16,7 @@ class Demo implements  Infra
 		return n*n;
 	}
 	
-}
+}*/
 
 
 

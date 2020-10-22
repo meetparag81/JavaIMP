@@ -29,9 +29,9 @@ class Test
 		
 		//by using lamda expression
 		 
-		Inter i = ()-> System.out.println("Implements the Inter method "+"m1()" );// provide implementation which we have implemented in Demo class
+		// int i = ()-> System.out.println("Implements the Inter method "+"m1()" );// provide implementation which we have implemented in Demo class
 		
-		i.m1();// to call the method we use interface refrence variable and called it in the test class
+		//i.m1();// to call the method we use interface refrence variable and called it in the test class
 		
 		
 	}

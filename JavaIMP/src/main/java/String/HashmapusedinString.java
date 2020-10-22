@@ -9,7 +9,7 @@ public class HashmapusedinString {
 		
 		Map<String[], int[]> values = new HashMap<String[], int[]>();
 		int Integer;
-		values.put("A", "B","C", 1,2,3);
+		//values.put("A", "B","C", 1,2,3);
 		
 	}
 

@@ -7,13 +7,13 @@ import org.openqa.selenium.WebDriver.Options;
 import org.openqa.selenium.WebDriver.Window;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import Multiplewindows.ResourceHelper;
+
 
 public class MethodsAndInterfaces 
 {
 	 
 	private void main() {
-		System.setProperty("webdriver.chrome.driver" ,ResourceHelper.getResourcePath("\\src\\main\\resources\\chromedriver.exe"));
+		System.setProperty("webdriver.chrome.driver" ,ResourceHelper.GetResourcePath("\\src\\main\\resources\\chromedriver.exe"));
 		WebDriver driver = new ChromeDriver();
 		//driver. manage returns the options intrface.
 		 Options var = driver.manage();

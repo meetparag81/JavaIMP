@@ -24,11 +24,12 @@ public class TestNGPriority
 	 
 	  @Test(priority = 1)
 	 
-<<<<<<< HEAD
+
 	  public void Threeone() {
-=======
+		  
+	  }
 	  public void One() {
->>>>>>> branch 'master' of https://github.com/meetparag81/JavaIMP.git
+
 	 
 		  System.out.println("This is the Test Case threeone");
 	 
@@ -36,14 +37,13 @@ public class TestNGPriority
 	 
 	  @Test(priority = 1)
 	 
-<<<<<<< HEAD
-	  public void Threetwo() 
-=======
-	  public void Two() 
->>>>>>> branch 'master' of https://github.com/meetparag81/JavaIMP.git
-	  {
-	 
-		  System.out.println("This is the Test Case number threetwo");
+
+	  public void Threetwo() {
+		  
+	  }
+
+	  public void Two() {
+  System.out.println("This is the Test Case number threetwo");
 	 
 	  }
 	  

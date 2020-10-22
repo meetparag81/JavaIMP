@@ -18,154 +18,180 @@ public class ItalyLogic {
 	private static Map oddNumbervalue;
 
 	public static void main(String[] args) {
-		 StringBuilder sb = new StringBuilder();
-		 String NumericString = "0123456789";
-		  lphaStringPattern2 = "ABCDEFGHIJKMNOPQTUVWXZ";
-		
-		sb = new StringBuilder(16);
-		String LastNameWOvowel = lastName. replaceAll("[AaEeIiOoUu]", "");
-		
-		String FirstNameWOvowel = firstName. replaceAll("[AaEeIiOoUu]", "");
-		//last name  three consonants 
-		if((lastName.length()<=2))
-		 {
-			 sb.append(lastName); 
-		 }
-		 else
-		 {
-			 lastName = LastNameWOvowel.substring(0, 3);
-		 }
-		sb.append(lastName);
-		 //first name  three consonants 
-		 if((firstName.length()<=2))
-		 {
-			 sb.append(firstName); 
-			 
-		 }
-		 else
-		 {
-			 firstName = FirstNameWOvowel.substring(0, 3);
-		 }
-		 generateDOB();
-		 sb.append(firstName);
-		 String[] Dateofbirth = DOB1.split("-");
-			String Month = Dateofbirth[1];
-			String day = Dateofbirth[0];
-			String year = Dateofbirth[2];
-			int birthyr= Integer.parseInt(year);
-			String yr = year.substring(2, 4);
-			sb.append(yr);
-			System.out.println("characters are" + sb + " and no of characters" + sb.length());
-		/*
-		 * String DateofBirth = generateDOB(); String[] Dateofbirthnew = DateofBirth.split(" "); String Month = Dateofbirthnew[0];
-		 */
-			if(Month.contentEquals("Jan"))
+		StringBuilder sb = new StringBuilder(16);
+		String AlphaStringPattern1 = "ABCDEFGHIJKLMNOP";
+		String NumericString = "0123456789"; 
+		String FirstName="";
+		String LastName="";
+
+		//To get consonants from Firstname
+		String LastNameWOvowel = lastName.replaceAll("[AaEeIiOoUu]", "");
+
+		//To get consonants from Lastname
+		String FirstNameWOvowel = firstName.replaceAll("[AaEeIiOoUu]", "");
+
+		// last name three consonants
+		if(LastNameWOvowel.length()>=3) {
+			LastName = LastNameWOvowel.substring(0, 3);
+		}
+		else {
+			LastName=lastName.substring(0,3);
+		}
+		sb.append(LastName.toUpperCase());
+
+		// first name three consonants
+		if(FirstNameWOvowel.length()>=3) {
+			FirstName = FirstNameWOvowel.substring(0, 3);
+		}
+		else {
+			FirstName=firstName.substring(0, 3);
+		}
+		sb.append(FirstName.toUpperCase());
+
+		//To get the year
+		String Year = DOB.split("/")[0];
+		sb.append(Year);
+
+		//To get Month
+		String Month=GetMonthAsAlphabet(DOB.split("/")[1]);
+		sb.append(Month);
+
+		//To get Day
+		String Day=DOB.split("/")[2];
+		sb.append(Day);
+
+		//To get the character
+		for(int i=0;i<1;i++)
+		{
+			int index = (int) (AlphaStringPattern1.length() * Math.random()); 
+			sb.append(AlphaStringPattern1.charAt(index)); 
+		}
+
+		//To get the Number
+		for (int i = 0; i < 3; i++) {
+			int index = (int) (NumericString.length() * Math.random());
+			sb.append(NumericString.charAt(index));
+		}
+
+		//To get check Value
+		String words = new String("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+		ArrayList<Character> CharList_odd = new ArrayList<Character>();
+		for (int i = 0; i < words.length(); i++) {
+			CharList_odd.add(words.charAt(i));
+		}
+		int[] arr_Alphavalue_odd = new int[] { 1, 0, 5, 7, 9, 13, 15, 17, 19, 21, 2, 4, 18, 20, 11, 3, 6, 8, 12, 14, 16, 10, 22, 25,24, 23 };
+		HashMap Oddalphabets = new HashMap<String , Integer>();
+		for (int i = 0; i < CharList_odd.size(); i++) {
+			Oddalphabets.put((CharList_odd.get(i)).toString(),arr_Alphavalue_odd[i]);
+		}
+		String numbers = new String("0123456789");
+		ArrayList<Character> numberlist = new ArrayList<Character>();
+		for (int i = 0; i < numbers.length(); i++) {
+			numberlist.add(numbers.charAt(i));
+		}
+		int[] arr_number_odd = new int[] { 1, 0, 5, 7, 9, 13, 15, 17, 19, 21 };
+		HashMap oddNumbervalue = new HashMap<String,Integer>();
+		for (int i = 0; i < 10; i++) {
+			oddNumbervalue.put((numberlist).get(i).toString(), arr_number_odd[i]);
+		}
+		ArrayList<String> odd = new ArrayList<>();
+		ArrayList<String> even = new ArrayList<>(); 
+		odd.clear();
+		even.clear();
+
+
+		//To get odd characters
+		for(int i=0;i<sb.length();i++) {
+			odd.add(String.valueOf(sb.charAt(i)));
+			i=i+1;
+
+		}
+
+		//To Sum odd characters
+		int oddsum=0;
+		for(int i=0;i<odd.size();i++) {
+
+			int eachdigit;
+			String getEachAlphabet = odd.get(i);
+			char value=getEachAlphabet.charAt(0);
+			if(Character.isDigit(value)) {
+				eachdigit=(int) oddNumbervalue.get(getEachAlphabet);
+			}
+			else
 			{
-				sb.append("A");
+				eachdigit=(int) Oddalphabets.get(getEachAlphabet);               
 			}
-			else if (Month.contentEquals("Feb")) {
-				sb.append("B");
-				
-			}
-			else if (Month.contentEquals("Mar")) {
-				sb.append("C");
-				
-			}
-			else if (Month.contentEquals("Apr")) {
-				sb.append("D");
-				
-			}
-			else if (Month.contentEquals("May")) {
-				sb.append("E");
-				
-			}
-			else if (Month.contentEquals("Jun")) {
-				sb.append("H");
-				
-			}
-			else if (Month.contentEquals("Jul")) {
-				sb.append("L");
-				
-			}
-			else if (Month.contentEquals("Aug")) {
-				sb.append("M");
-				
-			}
-			else if (Month.contentEquals("Sep")) {
-				sb.append("P");
-				
-			}
-			else if (Month.contentEquals("Oct")) {
-				sb.append("R");
-				
-			}
-			else if (Month.contentEquals("Nov")) {
-				sb.append("S");
-				
-			}
-			else if (Month.contentEquals("Dec")) {
-				sb.append("T");
-				
-			}
-			sb.append(day);
-			System.out.println("characters are" + sb + " and no of characters" + sb.length());
-			for (int i = 0; i <4 ; i++) {
-				int index = (int) (NumericString.length() * Math.random());
-				sb.append(NumericString.charAt(index));
-			}
-			System.out.println("characters are" + sb + " and no of characters" + sb.length());
-			
-			String words = new String("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
-		       ArrayList<Character> CharList = new ArrayList<Character>();
+			oddsum=oddsum+eachdigit;
+		}
 
-		       for(int i = 0; i<words.length(); i++){
-		    	   CharList.add(words.charAt(i));
-		         }
-		       
-		       int[] arr = new int[] {0,1,5,7,9,13,15,17,19,21,2,4,18,20,11,3,6,8,12,14,16,10,22,25,24,23};
+		//Get EvenCharacters from string
+		words = new String("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+		ArrayList<Character> CharList_even = new ArrayList<Character>();
+		for (int i = 0; i < words.length(); i++) {
+			CharList_even.add(words.charAt(i));
+		}
+		int[] arr_Alphavalue_even = new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23,24, 25 };
+		HashMap evenalphabets = new HashMap<String , Integer>();
+		for (int i = 0; i < CharList_even.size(); i++) {
+			evenalphabets.put((CharList_even.get(i)).toString(),arr_Alphavalue_even[i]);
+		}
+		numbers = new String("0123456789");
+		numberlist = new ArrayList<Character>();
+		for (int i = 0; i < numbers.length(); i++) {
+			numberlist.add(numbers.charAt(i));
+		}
+		int[] arr_number_even = new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+		HashMap evenNumbervalue = new HashMap<String,Integer>();
+		for (int i = 0; i < 10; i++) {
+			evenNumbervalue.put((numberlist).get(i).toString(), arr_number_even[i]);
+		}
 
-		       ArrayList<Character> Numberlist = new ArrayList<Character>();
+		//To get evenCharcters
+		for(int i=0;i<sb.length();i++) {
+			try {
 
-		       for(int i = 0; i<arr.length; i++){
-		    	   
-		    	   
-		         }
-		       
-  
-		       for(int j=0;j<26;j++)
-		       {
-		        alphabets = new HashMap<String, Integer>();
-				alphabets.put(CharList.get(j), arr[j]);
-				
-				int s = arr[j];
-				System.out.println("The  character and numbers are"+ CharList.get(j)+","+ s );
-		       }
-		       String numbers = new String("0123456789");
-		       for(int i = 0; i<numbers.length(); i++){
-		    	   Numberlist.add(numbers.charAt(i));
-		         }
-		       ArrayList<Character> numberlist = new ArrayList<Character>();
-		       int[] arr1 = new int[] {1,0,5,7,9,13,15,17,19,21};
-		       oddNumbervalue = new HashMap<String, Integer>();
-		       for(int i=0;i<10;i++)
-		       {
-		    	   oddNumbervalue.put(numbers.charAt(i), arr1[i]);
-		       }
-		       String s;
-			System.out.println("The  character and numbers are"); 
-		       
-		       ArrayList<Character> CharList1 = new ArrayList<Character>();
-		       System.out.println();
-		 for(int k=0;k<15;k++) { 
-			 String NID= sb.toString(); 
-			 char s1 = NID.charAt(k);
-		  alphabets.get(k);
-		 }
-		 
-	
-		
-		
+				even.add(String.valueOf(sb.charAt(i+1)));
+				i=i+1;
+			}
+			catch(Exception e) {
+				continue;
+			}
+		}
+
+		//To sum even charcters
+		int evensum=0;
+		for(int i=0;i<even.size();i++) {
+			int eachdigit;
+			String getEachAlphabet = even.get(i);
+			char value=getEachAlphabet.charAt(0);
+			if(Character.isDigit(value)) {
+				eachdigit=(int) evenNumbervalue.get(getEachAlphabet);
+			}
+			else {
+
+				eachdigit=(int) evenalphabets.get(getEachAlphabet);
+			}
+			evensum=evensum+eachdigit;
+
+		}
+
+		//Calculate Remainder
+		int modvalue= (evensum+oddsum)%26;
+
+		//To get final number for checkValue
+		//To get final number for checkValue
+		int[] arr_Alphavalue_Final = new int[] { 0, 1, 2, 3, 4,5, 6, 7, 8, 9,10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23,24,25};
+
+		Map FinalAlphabets = new HashMap<>();
+		for (int j = 0; j < CharList_odd.size(); j++) {
+			FinalAlphabets.put( arr_Alphavalue_Final[j],(CharList_odd.get(j)));
+		}
+
+		//To get the Check Value
+		String CheckValue = String.valueOf(FinalAlphabets.get(modvalue));
+		sb.append(CheckValue);
 	}
+
 	public static String generateDOB() {
 		Calendar calendar = Calendar.getInstance();
 		calendar.add(Calendar.YEAR, getRandomInteger(-50, -20));
@@ -182,5 +208,39 @@ public class ItalyLogic {
 	public static int getRandomInteger(int maximum, int minimum) {
 		return ((int) (Math.random() * (maximum - minimum))) + minimum;
 	}
+	
+	//To Get the Month as Alphabet for National ID
+		private static String GetMonthAsAlphabet(String Month) {
+			String result="";
+			switch (Month) {
+			case "01": result="A";
+			break;
+			case "02": result="B";
+			break;
+			case "03": result="C";
+			break;
+			case "04": result="D";
+			break;
+			case "05": result="E";
+			break;
+			case "06": result="H";
+			break;
+			case "07": result="L";
+			break;
+			case "08": result="M";
+			break;
+			case "09": result="P";
+			break;
+			case "10": result="R";
+			break;
+			case "11": result="S";
+			break;
+			case "12": result="T";
+			break;
+			default: result="";
+			break;
+			}
+			return result;
+		}
 
 }
