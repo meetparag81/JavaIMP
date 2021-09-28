@@ -1,4 +1,4 @@
-package JavaIMP.JavaIMP;
+package JavaIMP.javaIMP;
 
 /**
  * Hello world!
