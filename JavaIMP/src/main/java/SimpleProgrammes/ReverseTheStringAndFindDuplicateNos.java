@@ -29,7 +29,7 @@ int count = 0;
 				}
 				
 			}
-			//System.out.println(rev= rev+inp[i]);
+			System.out.println(rev= rev+inp[i]);
 			
 			
 			

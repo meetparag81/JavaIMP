@@ -5,15 +5,17 @@ public class ReverseString_Withoutstringbuffer {
 	public static void main(String[] args) 
 	{
 		
-		String input = "put";
+		String input = "Selenium";
 
 		// convert String to character array
 		// by using toCharArray
-		char[] try1 = input.toCharArray();
+		char[] characterinstring = input.toCharArray();
 
-		for (int i = try1.length-1; i>=0; i--)
+		for (int i = characterinstring.length-1; i>=0; i--)
 		{
-			System.out.print(try1[i]);
+			
+			System.out.print(characterinstring[i]);
+			
 			
 		}
 		
