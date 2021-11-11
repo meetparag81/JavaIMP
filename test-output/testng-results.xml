@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="30" started-at="2020-10-18T09:58:54Z" finished-at="2020-10-18T09:58:54Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="30" started-at="2020-10-18T09:58:54Z" finished-at="2020-10-18T09:58:54Z">
+      <class name="SeleniumImportant.Annotation">
+        <test-method status="PASS" signature="sequence1()[pri:0, instance:SeleniumImportant.Annotation@1e127982]" name="sequence1" is-config="true" duration-ms="11" started-at="2020-10-18T15:28:54Z" finished-at="2020-10-18T15:28:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sequence1 -->
+        <test-method status="PASS" signature="sequence2()[pri:0, instance:SeleniumImportant.Annotation@1e127982]" name="sequence2" is-config="true" duration-ms="1" started-at="2020-10-18T15:28:54Z" finished-at="2020-10-18T15:28:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sequence2 -->
+        <test-method status="PASS" signature="sequence3()[pri:0, instance:SeleniumImportant.Annotation@1e127982]" name="sequence3" is-config="true" duration-ms="0" started-at="2020-10-18T15:28:54Z" finished-at="2020-10-18T15:28:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sequence3 -->
+        <test-method status="PASS" signature="sequence4()[pri:0, instance:SeleniumImportant.Annotation@1e127982]" name="sequence4" is-config="true" duration-ms="0" started-at="2020-10-18T15:28:54Z" finished-at="2020-10-18T15:28:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sequence4 -->
+        <test-method status="PASS" signature="sequence5()[pri:0, instance:SeleniumImportant.Annotation@1e127982]" name="sequence5" duration-ms="9" started-at="2020-10-18T15:28:54Z" finished-at="2020-10-18T15:28:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sequence5 -->
+        <test-method status="PASS" signature="sequence6()[pri:0, instance:SeleniumImportant.Annotation@1e127982]" name="sequence6" is-config="true" duration-ms="1" started-at="2020-10-18T15:28:54Z" finished-at="2020-10-18T15:28:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sequence6 -->
+        <test-method status="PASS" signature="sequence7()[pri:0, instance:SeleniumImportant.Annotation@1e127982]" name="sequence7" is-config="true" duration-ms="0" started-at="2020-10-18T15:28:54Z" finished-at="2020-10-18T15:28:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sequence7 -->
+        <test-method status="PASS" signature="sequence8()[pri:0, instance:SeleniumImportant.Annotation@1e127982]" name="sequence8" is-config="true" duration-ms="1" started-at="2020-10-18T15:28:54Z" finished-at="2020-10-18T15:28:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sequence8 -->
+        <test-method status="PASS" signature="sequence9()[pri:0, instance:SeleniumImportant.Annotation@1e127982]" name="sequence9" is-config="true" duration-ms="1" started-at="2020-10-18T15:28:54Z" finished-at="2020-10-18T15:28:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sequence9 -->
+      </class> <!-- SeleniumImportant.Annotation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
