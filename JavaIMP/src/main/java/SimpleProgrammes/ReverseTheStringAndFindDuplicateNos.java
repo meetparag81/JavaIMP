@@ -9,36 +9,40 @@ public class ReverseTheStringAndFindDuplicateNos
 	public static void main(String[] args) 
 	{
 		
-		String s = "Selenium";
-		int strcount = s.length();
-		String rev = "";
-		int i=0;
-char[]inp = s.toCharArray();
-
-int count = 0;
-		for (  i=0; i <strcount; i++) 
+		String str = "Selenium";
+	    char ch[]=str.toCharArray();  
+	    String rev=""; 
+	   int count=0;
+	    for(int i=ch.length-1;i>=0;i--){  
+	        rev+=ch[i];  
+	    }  
+	    
+	    for(int j=0;j>str.length();j++)
 		{
-			for(int j=i+1;j<strcount;j++)
-			{
+			for(int k=0;k<str.length();k++){
 				
-				if(inp[i]==inp[j])
+				if(ch[k]==ch[j])
 				{
-					System.out.println(inp[j]);
+					
 					count++;
-					break;
+					
 				}
+			}
+	     
+	}
+	    System.out.println("No of duplicates"+ count);
+	    System.out.print("reverse string is"+rev);
+			
+			
+				
+				
 				
 			}
-			System.out.println(rev= rev+inp[i]);
 			
-			
-			
-			
-		}
 		
-		System.out.println("No of duplicates"+ count);
+		
 		
 
 	}
-}
+
 
