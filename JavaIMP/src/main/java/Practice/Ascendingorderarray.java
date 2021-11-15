@@ -1,5 +1,5 @@
 package Practice;
-//
+//Ascending
 public class Ascendingorderarray {
 	public static void main(String[] args) {
 		  int [] arr = new int [] {5, 2, 8, 7, 1}; 

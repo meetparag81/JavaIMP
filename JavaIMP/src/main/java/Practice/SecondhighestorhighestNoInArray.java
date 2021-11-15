@@ -1,5 +1,5 @@
 package Practice;
-
+//Secondhighest
 public class SecondhighestorhighestNoInArray {
 
 	public static void main(String[] args) {
