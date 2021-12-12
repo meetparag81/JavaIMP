@@ -11,7 +11,7 @@ public class ParallelTest1 {
 	public void Test1(){
 		
 		System.out.println("I am test1");
-		public WebDriver driver;
+		WebDriver driver;
 		 WebDriverManager.chromedriver().setup();
 	}
 	
