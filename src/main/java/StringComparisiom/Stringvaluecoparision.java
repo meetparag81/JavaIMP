@@ -1,6 +1,6 @@
 package StringComparisiom;
 
-public class Test1 {
+public class Stringvaluecoparision {
 
 	public static void main(String[] args) 
 	{
