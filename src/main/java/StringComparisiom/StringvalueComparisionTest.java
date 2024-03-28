@@ -25,7 +25,7 @@ public class StringvalueComparisionTest
 		boolean flag = a1==b1;
 		System.out.println("The comparision value when a1==b1 is "+ flag);
 
-
+		a1.equals(b1);
 		System.out.println("The comparision value when a1.equals(b1) is "+a1.equals(b1));	
 
 		String d1 = new String("selenium");
@@ -34,7 +34,7 @@ public class StringvalueComparisionTest
 		boolean flag1 = d1==e1;
 		System.out.println("The comparision value when d1==e1 is "+flag1);
 
-
+		d1.equals(e1);
 		System.out.println("The comparision value when d1.equals(e1) is "+d1.equals(e1));
 
 
